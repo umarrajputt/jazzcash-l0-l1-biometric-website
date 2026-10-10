@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5b43b5">
+<title>JazzCash L0 to L1 Support Learning Hub</title>
+<style>
+:root{--purple:#5b43b5;--deep:#21183f;--bg:#f5f6fb;--text:#24243a;--muted:#667085;--border:#e4e6ef;--green:#16836b;--amber:#a86408}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+header{background:linear-gradient(125deg,#1c1735,#4b3190 70%,#8066e8);color:white;padding:34px 20px}header .inner,nav .inner,main,footer{max-width:1120px;margin:auto}.eyebrow{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:#dcd3ff;font-weight:800}h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.15;margin:8px 0}header p{max-width:760px;margin:10px 0 0;color:#eee9ff}
+nav{position:sticky;top:0;z-index:10;background:var(--deep);box-shadow:0 3px 15px #17112c33}nav .inner{display:flex;gap:5px;overflow-x:auto;padding:9px 12px}nav a{white-space:nowrap;color:#f1edff;text-decoration:none;padding:8px 10px;border-radius:8px;font-size:.9rem}nav a:hover{background:#49366f}
+main{padding:22px 16px 45px}.hero,.panel,.card{background:white;border:1px solid var(--border);border-radius:15px;box-shadow:0 5px 20px #20223a08}.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:20px;padding:24px;align-items:center}.hero h2{margin:4px 0 8px}.muted{color:var(--muted)}.hero-side{background:#f0edff;padding:18px;border-radius:12px}.hero-side strong{display:block;color:var(--purple);font-size:1.5rem}.bar{height:9px;background:#dfdcef;border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--purple),#28a78b);transition:width .2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:9px;background:var(--purple);color:white;font:inherit;font-weight:700;text-decoration:none;padding:10px 14px;cursor:pointer}.btn:hover{background:#473298}.btn.light{background:#efedfa;color:#45348c}.section-title{margin:30px 0 13px}.section-title h2{margin:0;font-size:1.5rem}.section-title p{margin:3px 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{padding:19px;border-top:4px solid var(--purple)}.card:nth-child(2){border-top-color:#16836b}.card:nth-child(3){border-top-color:#d39a28}.card h3{margin:5px 0}.card p{color:var(--muted);margin:6px 0 13px}.tag{display:inline-block;background:#f0edff;color:#4c3997;padding:3px 8px;border-radius:99px;font-size:.75rem;font-weight:800}
+.panel{padding:22px;margin-top:20px}.panel h2{margin:0 0 8px}.steps{display:grid;gap:10px;margin-top:15px}.step{display:grid;grid-template-columns:36px 1fr;gap:12px;padding:13px;background:#fafaff;border:1px solid var(--border);border-radius:10px}.num{height:34px;width:34px;border-radius:50%;background:#e9e4ff;color:var(--purple);font-weight:800;display:grid;place-items:center}.callout{background:#fff7e7;border-left:4px solid #d39a28;padding:12px;border-radius:0 8px 8px 0;margin:14px 0}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:560px}th,td{text-align:left;padding:11px;border-bottom:1px solid var(--border);vertical-align:top}th{background:#f0edff;color:#44347f}
+label{font-weight:700;display:block;margin:12px 0 5px}input[type=text],select,textarea{width:100%;padding:10px;border:1px solid #cfd2e0;border-radius:8px;font:inherit;color:var(--text);background:white}textarea{min-height:80px;resize:vertical}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.code{background:#19182b;color:#f1efff;padding:14px;border-radius:9px;overflow-x:auto;white-space:pre;font: .9rem/1.6 ui-monospace,Consolas,monospace}
+.quiz-q{padding:15px 0;border-bottom:1px solid var(--border)}.option{display:flex;gap:9px;align-items:flex-start;padding:10px;border:1px solid var(--border);border-radius:9px;margin:8px 0;cursor:pointer}.option:has(input:checked){background:#f0edff;border-color:#9c8ce0}.option input{margin-top:6px;accent-color:var(--purple)}.feedback{display:none;background:#f4f2ff;padding:10px;border-radius:8px;margin-top:8px}.feedback.show{display:block}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:9px}.checkrow{display:flex;gap:9px;padding:10px;border:1px solid var(--border);border-radius:8px;background:white}.checkrow input{margin-top:6px;accent-color:var(--purple)}
+footer{padding:22px 16px 34px;color:var(--muted);font-size:.9rem}.small{font-size:.88rem}
+@media(max-width:780px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.formgrid,.checklist{grid-template-columns:1fr}.panel{padding:16px}.hero{padding:18px}.section-title{margin-top:24px}}
+@media print{nav,.btn{display:none!important}body{background:white}.hero,.panel,.card{box-shadow:none;break-inside:avoid}main{max-width:none}}
+</style>
+</head>
+<body>
+<header><div class="inner">
+<div class="eyebrow">Practical training • Beginner to intermediate</div>
+<h1>🎓 JazzCash L0 → L1 Support Learning Hub</h1>
+<p>Learn first-line customer support, technical investigation, transaction troubleshooting, SQL and API basics, biometric security, and professional escalation.</p>
+</div></header>
+<nav><div class="inner">
+<a href="#home">Home</a><a href="#levels">L0 vs L1</a><a href="#workflow">Workflow</a><a href="#cases">Case Lab</a><a href="#technical">SQL & APIs</a><a href="#biometric">Biometrics</a><a href="#quiz">Quiz</a><a href="#progress">Progress</a>
+</div></nav>
+<main>
+<section class="hero" id="home">
+<div><span class="tag">YOUR LEARNING PATH</span><h2>From customer support to technical investigation</h2><p class="muted">Practice a repeatable method: verify safely, understand the symptom, collect evidence, check authorized records, document findings, and escalate when needed.</p><a class="btn" href="#levels">Start learning ↓</a> <button class="btn light" onclick="window.print()">Print course</button></div>
+<div class="hero-side"><span class="muted">Your checklist progress</span><strong id="pct">0% complete</strong><div class="bar"><span id="barfill"></span></div><p class="small" id="progressText">Mark skills complete in the Progress section.</p></div>
+</section>
+
+<div class="section-title" id="levels"><h2>Support levels overview</h2><p>Know your role and when to pass a case to the next team.</p></div>
+<section class="grid">
+<article class="card"><span class="tag">LEVEL 0</span><h3>📞 First-line support</h3><p>Understand the customer’s issue, complete approved basic checks, create a quality ticket, and communicate next steps.</p><ul><li>Customer communication</li><li>Issue categorization</li><li>Ticket creation</li><li>Basic troubleshooting</li><li>Correct escalation</li></ul></article>
+<article class="card"><span class="tag">LEVEL 1</span><h3>🔧 Technical investigation</h3><p>Use authorized technical records to narrow down the cause of complex or unresolved issues.</p><ul><li>Timeline and log analysis</li><li>Transaction-state checks</li><li>API and SQL fundamentals</li><li>Evidence-based hypotheses</li><li>Incident documentation</li></ul></article>
+<article class="card"><span class="tag">SECURITY</span><h3>🔐 Biometric support</h3><p>Understand typical verification problems while preserving account security.</p><ul><li>Device and sensor checks</li><li>Enrollment troubleshooting</li><li>Approved identity recovery</li><li>Fraud indicators</li><li>Privacy and safe escalation</li></ul></article>
+</section>
+
+<section class="panel" id="workflow"><h2>Module 1 — L0 support workflow</h2><p class="muted">Exact responsibilities and processes depend on your employer’s current approved procedures.</p>
+<div class="steps">
+<div class="step"><div class="num">1</div><div><strong>Listen and classify</strong><br>Ask what happened, when it happened, what the customer expected, and the exact error shown.</div></div>
+<div class="step"><div class="num">2</div><div><strong>Verify safely</strong><br>Use approved identity checks. Never request an OTP, PIN, password, or full authentication credentials.</div></div>
+<div class="step"><div class="num">3</div><div><strong>Record the ticket</strong><br>Capture the timestamp and time zone, reference ID if available, customer impact, error message, and checks already performed. Minimize personal data.</div></div>
+<div class="step"><div class="num">4</div><div><strong>Perform approved basic checks</strong><br>Review authorized service notices, connectivity, app version, and transaction status. Never guess the state of a payment.</div></div>
+<div class="step"><div class="num">5</div><div><strong>Resolve or escalate</strong><br>Follow the documented workflow if unresolved, security-sensitive, or outside your permissions. Do not promise an outcome without verified information.</div></div>
+</div>
+<div class="callout"><strong>Golden rule:</strong> If money may be at risk or transaction status is unclear, do not ask the customer to repeat the payment. Verify the authoritative status and follow the approved procedure.</div>
+</section>
+
+<section class="panel" id="cases"><h2>Module 2 — Transaction troubleshooting case lab</h2><p class="muted">Choose a fictional scenario to see the recommended investigation approach.</p>
+<div class="formgrid">
+<div><label for="caseSelect">Select scenario</label><select id="caseSelect" onchange="showCase()"><option value="pending">Money deducted, recipient not credited</option><option value="timeout">API request timed out</option><option value="login">Customer cannot log in</option><option value="bio">Biometric verification failed</option></select></div>
+<div><label>Investigation objective</label><input type="text" id="caseObjective" value="Establish the authoritative transaction state" readonly></div>
+</div>
+<div id="caseContent" class="callout" aria-live="polite"></div>
+<h3 style="margin-top:18px">L1 investigation sequence</h3>
+<div class="steps">
+<div class="step"><div class="num">1</div><div><strong>Scope the issue</strong><br>Determine whether it affects one user, one transaction, or multiple users.</div></div>
+<div class="step"><div class="num">2</div><div><strong>Build a timeline</strong><br>Normalize timestamps and compare request, processing, ledger, and notification events where available.</div></div>
+<div class="step"><div class="num">3</div><div><strong>Correlate evidence</strong><br>Use authorized transaction references and correlation IDs across relevant records.</div></div>
+<div class="step"><div class="num">4</div><div><strong>Test hypotheses</strong><br>Check for delayed processing, downstream errors, stale status, or missing events. Do not treat a hypothesis as a fact.</div></div>
+<div class="step"><div class="num">5</div><div><strong>Document and escalate</strong><br>Summarize verified facts, impact, actions taken, unresolved questions, and the next approved action.</div></div>
+</div>
+</section>
+
+<section class="panel" id="technical"><h2>Module 3 — SQL and API fundamentals</h2>
+<h3>Read-only SQL example</h3><p class="muted">This example uses a fictional training table. Real systems may use different schemas and access rules.</p>
+<div class="code">SELECT transaction_ref, status, updated_at
+FROM training_transactions
+WHERE transaction_ref = 'DEMO-10025';</div>
+<p><strong>What it does:</strong> selects a few fields for one synthetic reference. Use only approved read-only access in a real environment. Never query customer data without authorization, and never run updates or deletes as part of basic investigation.</p>
+<h3 style="margin-top:18px">Common HTTP status codes</h3>
+<div class="table-wrap"><table><thead><tr><th>Code</th><th>General meaning</th><th>Support interpretation</th></tr></thead><tbody>
+<tr><td><strong>200</strong></td><td>Request succeeded</td><td>Check the response body and business status; HTTP success alone may not mean a payment settled.</td></tr>
+<tr><td><strong>400</strong></td><td>Bad request</td><td>Inspect safe, non-sensitive validation details.</td></tr>
+<tr><td><strong>401 / 403</strong></td><td>Unauthenticated / forbidden</td><td>Check authorized access and permissions; do not bypass security controls.</td></tr>
+<tr><td><strong>404</strong></td><td>Resource not found</td><td>Confirm the reference and endpoint in approved tools.</td></tr>
+<tr><td><strong>429</strong></td><td>Rate limited</td><td>Follow documented retry/backoff behavior.</td></tr>
+<tr><td><strong>500 / 502 / 503 / 504</strong></td><td>Server or gateway problem</td><td>Correlate logs and check downstream status; a timeout does not prove a transaction failed.</td></tr>
+</tbody></table></div>
+<div class="callout"><strong>Important:</strong> Never retry a money-moving request just because it timed out. Check idempotency and the authoritative transaction state using approved procedures.</div>
+<h3>Sample log interpretation</h3><div class="code">09:05:01 INFO  request_accepted   ref=DEMO-10025
+09:05:02 INFO  debit_event        result=recorded
+09:05:08 WARN  downstream_timeout result=unknown
+09:05:10 INFO  status_check       state=processing</div>
+<p>Interpretation: the downstream result is uncertain. Check the authoritative ledger and later events before concluding success or failure. These sample log names are illustrative only.</p>
+</section>
+
+<section class="panel" id="biometric"><h2>Module 4 — Biometric troubleshooting and security</h2><div class="steps">
+<div class="step"><div class="num">1</div><div><strong>Clarify the error</strong><br>Record the exact message and whether the issue occurs during enrollment, verification, or another approved flow.</div></div>
+<div class="step"><div class="num">2</div><div><strong>Check basic conditions</strong><br>Follow approved guidance for device compatibility, sensor cleanliness, lighting where relevant, app version, and connectivity.</div></div>
+<div class="step"><div class="num">3</div><div><strong>Protect identity controls</strong><br>Never bypass verification, accept someone else’s biometric, or ask the customer to send biometric data through chat.</div></div>
+<div class="step"><div class="num">4</div><div><strong>Escalate safely</strong><br>Repeated failures, identity mismatches, suspected spoofing, or account-security concerns require the approved specialist route.</div></div>
+</div><div class="callout">Device biometrics, such as a phone’s fingerprint unlock, are not necessarily the same as a financial service’s identity-verification process. Follow the specific approved customer flow.</div>
+</section>
+
+<section class="panel" id="ticket"><h2>Practical lab — Build an escalation summary</h2><p class="muted">Training only. This form does not submit to JazzCash. Use fictional information, not real customer data.</p>
+<div class="formgrid">
+<div><label for="ref">Demo reference ID</label><input id="ref" type="text" value="DEMO-10025"></div>
+<div><label for="time">Incident time and zone</label><input id="time" type="text" value="2026-10-10 14:05 PKT"></div>
+</div>
+<label for="impact">Customer impact</label><textarea id="impact">Transfer reported as deducted; recipient has not confirmed receipt.</textarea>
+<label for="status">Verified status</label><select id="status"><option>Processing / not yet verified as final</option><option>Confirmed successful</option><option>Confirmed failed</option><option>Unknown / conflicting records</option></select>
+<label for="evidence">Evidence and checks</label><textarea id="evidence">Synthetic sample: debit-related event found; recipient credit not found in the checked window; downstream timeout logged.</textarea>
+<label for="next">Recommended next action</label><textarea id="next">Verify authoritative ledger and recipient status; follow approved reconciliation and escalation procedure.</textarea>
+<button class="btn" onclick="copySummary()">Copy escalation summary</button><span id="copyStatus" class="small" aria-live="polite"></span>
+</section>
+
+<section class="panel" id="quiz"><h2>Module 5 — Knowledge quiz</h2><p class="muted">Select one answer for each question, then check your results.</p>
+<form id="quizForm">
+<div class="quiz-q"><strong>1. A payment API times out. What does that prove?</strong>
+<label class="option"><input type="radio" name="q1" value="a"> The payment definitely failed.</label><label class="option"><input type="radio" name="q1" value="b"> The payment definitely succeeded.</label><label class="option"><input type="radio" name="q1" value="c"> The outcome needs verification.</label><div class="feedback" id="f1">A timeout is a communication symptom; the operation may still have completed.</div></div>
+<div class="quiz-q"><strong>2. What is the best way to connect related events across services?</strong>
+<label class="option"><input type="radio" name="q2" value="a"> Use an authorized correlation ID.</label><label class="option"><input type="radio" name="q2" value="b"> Ask for the customer's PIN.</label><label class="option"><input type="radio" name="q2" value="c"> Guess from the customer's name.</label><div class="feedback" id="f2">Correlation identifiers help connect relevant events while minimizing exposure of personal data.</div></div>
+<div class="quiz-q"><strong>3. A debit event is visible but no recipient-credit event appears in your search. What next?</strong>
+<label class="option"><input type="radio" name="q3" value="a"> Immediately issue a refund.</label><label class="option"><input type="radio" name="q3" value="b"> Verify authoritative records and follow reconciliation procedures.</label><label class="option"><input type="radio" name="q3" value="c"> Tell the customer to transfer again.</label><div class="feedback" id="f3">Absence from one search window does not prove the credit never happened.</div></div>
+<div class="quiz-q"><strong>4. Which item must never be included in an ordinary support ticket?</strong>
+<label class="option"><input type="radio" name="q4" value="a"> Error text.</label><label class="option"><input type="radio" name="q4" value="b"> Timestamp and time zone.</label><label class="option"><input type="radio" name="q4" value="c"> OTP or account PIN.</label><div class="feedback" id="f4">Authentication secrets must never be requested or recorded in support notes.</div></div>
+<button type="button" class="btn" onclick="gradeQuiz()">Check answers</button> <button type="reset" class="btn light" onclick="resetQuiz()">Try again</button>
+<div id="quizResult" class="callout" aria-live="polite" style="display:none"></div>
+</form></section>
+
+<section class="panel" id="progress"><h2>Learning progress checklist</h2><p class="muted">Check off the skills you have practiced. Progress is kept for this page session only.</p>
+<div class="checklist" id="checks">
+<label class="checkrow"><input type="checkbox"> I understand the L0 workflow.</label>
+<label class="checkrow"><input type="checkbox"> I can write a useful ticket.</label>
+<label class="checkrow"><input type="checkbox"> I can build a transaction timeline.</label>
+<label class="checkrow"><input type="checkbox"> I can interpret a timeout cautiously.</label>
+<label class="checkrow"><input type="checkbox"> I understand basic SQL and HTTP codes.</label>
+<label class="checkrow"><input type="checkbox"> I know biometric safety boundaries.</label>
+<label class="checkrow"><input type="checkbox"> I completed the knowledge quiz.</label>
+</div><p id="checkCount" class="small muted">0 of 7 skills completed.</p>
+</section>
+</main>
+<footer><p><strong>Training disclaimer:</strong> This is an independent educational demo, not an official JazzCash website. The scenarios, references, logs, schemas, and procedures are illustrative. Follow current employer policies, authorized tools, security controls, and escalation paths for real cases.</p></footer>
+<script>
+const cases={
+pending:{objective:"Establish the authoritative transaction state",text:"Scenario: A transfer appears deducted, but the recipient has not confirmed receipt. Capture the reference and time, compare the authoritative transaction/ledger status with recipient-side records, inspect relevant downstream events, and follow the approved reconciliation route. Do not ask the customer to send again or promise a refund."},
+timeout:{objective:"Determine whether the operation completed",text:"Scenario: An API status request returns HTTP 504. Correlate gateway and downstream logs, check later events and the authoritative transaction state, and inspect retry/idempotency records if authorized. A timeout does not prove payment failure."},
+login:{objective:"Identify the failure stage safely",text:"Scenario: A customer cannot log in. Record the exact error and scope, check service notices and approved basic troubleshooting, and follow the official account-recovery flow. Never ask for the password, PIN, or OTP, and do not bypass account controls."},
+bio:{objective:"Separate device issues from identity verification",text:"Scenario: Biometric verification repeatedly fails. Clarify whether this is enrollment or verification, capture the exact error, follow approved device/app checks, and escalate repeated failure or identity mismatch. Never bypass verification or request biometric samples through chat."}
+};
+function showCase(){const c=cases[document.getElementById('caseSelect').value];document.getElementById('caseObjective').value=c.objective;document.getElementById('caseContent').textContent=c.text}
+function copySummary(){const val=id=>document.getElementById(id).value;const text=`TRAINING ESCALATION — SYNTHETIC DATA\nReference: ${val('ref')}\nTime: ${val('time')}\nImpact: ${val('impact')}\nStatus: ${val('status')}\nEvidence: ${val('evidence')}\nNext action: ${val('next')}`;const status=document.getElementById('copyStatus');if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>status.textContent=' Summary copied.').catch(()=>fallbackCopy(text,status))}else fallbackCopy(text,status)}
+function fallbackCopy(text,status){const t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();try{document.execCommand('copy');status.textContent=' Summary copied.'}catch(e){status.textContent=' Copy unavailable; select and copy the text manually.'}t.remove()}
+const answers={q1:'c',q2:'a',q3:'b',q4:'c'};
+function gradeQuiz(){let score=0;for(let i=1;i<=4;i++){const chosen=document.querySelector(`input[name="q${i}"]:checked`);const fb=document.getElementById(`f${i}`);fb.classList.add('show');if(chosen&&chosen.value===answers['q'+i])score++}const r=document.getElementById('quizResult');r.style.display='block';r.textContent=`Your score: ${score}/4. `+(score===4?'Excellent—you understand the core support principles.':'Review the explanations and try again.');updateProgress()}
+function resetQuiz(){setTimeout(()=>{document.querySelectorAll('.feedback').forEach(x=>x.classList.remove('show'));document.getElementById('quizResult').style.display='none';updateProgress()},0)}
+function updateProgress(){const all=[...document.querySelectorAll('#checks input')];const n=all.filter(x=>x.checked).length;const total=all.length;document.getElementById('pct').textContent=Math.round(n/total*100)+'% complete';document.getElementById('barfill').style.width=(n/total*100)+'%';document.getElementById('checkCount').textContent=`${n} of ${total} skills completed.`;document.getElementById('progressText').textContent=n===total?'All checklist skills marked complete!':'Mark skills complete in the Progress section.'}
+document.querySelectorAll('#checks input').forEach(x=>x.addEventListener('change',updateProgress));showCase();updateProgress();
+</script>
+</body>
+</html>
